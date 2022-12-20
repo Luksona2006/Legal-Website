@@ -6,17 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expat Legal Consulting</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+    <link rel="application/json" href="https://api.emailjs.com/api/v1.0/email/send">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
 </head>
 
 <body>
+    <div id="popUp">
+        <div><img src="/images/succsessful.png" alt="succsessful">
+            <h2>Message Sent Succsessfuly!</h2>
+        </div>
+        <a href="/index.html"><button>GO HOME</button></a>
+    </div>
     <header>
         <div class="container">
             <nav>
-                <a href="/index.html">
-                    <img src="/images/logo.png" alt="Expat Legal Consulting">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Expat Legal Consulting">
                 </a>
                 <div id="navLinks">
                     <svg width="28" height="28" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -27,22 +34,22 @@
                     </svg>
                     <ul>
                         <li>
-                            <a href="/index.html">
+                            <a href="index.html">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="/pages/services.html" class="active-li">
+                            <a href="services.html">
                                 Services
                             </a>
                         </li>
                         <li>
-                            <a href="/pages/about.html">
+                            <a href="about.html">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="/pages/contact.html">
+                            <a href="contact.html" class="active-li">
                                 Contact Us
                             </a>
                         </li>
@@ -58,57 +65,32 @@
     </header>
     <main>
         <div class="container">
-            <div class="services">
-                <h2 data-aos="fade-up">Services</h2>
-                <div class="service-divs">
-                    <div class="service-div" data-aos="zoom-in">
-                        <div>
-                            <h4>Georgian Residency Services</h4>
-                        </div>
-                        <p>- Work residence permit
-                            <br>- Study residence permit
-                            <br>- Residence permit (Investment/Real estate)
-                            <br>- Residence permit based on family reunification
-                        </p>
+            <div class="contact" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <span>Working hours Monday - Friday 10:00- 18:00</span>
+                    <div>
+                        <label for="name">Name</label>
+                        <input placeholder="Name" id="name" name="name" type="text">
                     </div>
-                    <div class="service-div" data-aos="zoom-in">
-                        <div>
-                            <h4>Real Estate Services</h4>
-                        </div>
-                        <p>- Real estate law
-                            <br>- Purchase Agreement
-                            <br>- In-person Assistance with the Registration in HoJ
-                            <br>- Assistance to find real estate which suits your best interests
-                        </p>
+                    <div>
+                        <label for="surname">Surname</label>
+                        <input placeholder="Surname" id="surname" name="surname" type="text">
                     </div>
-                    <div class="service-div" data-aos="zoom-in">
-                        <div>
-                            <h4>Personal Assistant Services</h4>
-                        </div>
-                        <p>- Legal Translation
-                            <br>- Opening Bank Account
-                            <br>- Contract Drafting
-                        </p>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input placeholder="E-Mail" id="email" name="email" type="email">
                     </div>
-                    <div class="service-div" data-aos="zoom-in">
-                        <div>
-                            <h4>Services For Business</h4>
-                        </div>
-                        <p>- Business Registration
-                            <br>- Individual Entrepreneur Registration
-                            <br>- Virtual Office Address
-                        </p>
+                    <div>
+                        <label for="number">Number</label>
+                        <input placeholder="Number" id="number" name="number" type="number">
                     </div>
-                    <div class="service-div" data-aos="zoom-in">
-                        <div>
-                            <h4>Attorney Services</h4>
-                        </div>
-                        <p>- In Civil Law Cases
-                            <br>- In Criminal law Cases
-                            <br>- In Administrative law cases
-                        </p>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea placeholder="Write message..." id="message" name="message" cols="30" rows="10"></textarea>
                     </div>
-                </div>
+                    <div id="formButton"><button type="submit">Submit</button></div>
+                </form>
             </div>
         </div>
     </main>
@@ -116,8 +98,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-description">
-                    <a href="/index.html">
-                        <img src="/images/logo.png" alt="Expat Legal Consulting">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Expat Legal Consulting">
                     </a>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam laboriosam necessitatibus
                         reiciendis nulla, natus amet non accusantium nesciunt placeat quo adipisci repellendus totam
@@ -127,16 +109,16 @@
                     <h3>Menu</h3>
                     <ul>
                         <li>
-                            <a href="/index.html">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="/pages/services.html">Services</a>
+                            <a href="services.html">Services</a>
                         </li>
                         <li>
-                            <a href="/pages/about.html">About Us</a>
+                            <a href="about.html">About Us</a>
                         </li>
                         <li>
-                            <a href="/pages/contact.html">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                     <div class="footerButtons">
@@ -208,11 +190,19 @@
         <span>© Copyright 2022 & All rights reserved</span>
     </footer>
 
-    <script src="/js/index.js"></script>
-
+    <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('J6Az7Q4xsZByg5yjh');
+        })();
     </script>
 </body>
 
