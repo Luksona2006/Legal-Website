@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="application/json" href="https://api.emailjs.com/api/v1.0/email/send">
+</head>
+
+<body>
+    <div id="popUp">
+        <div><img src="images/succsessful.png" alt="succsessful">
+            <h2>Message Sent Succsessfuly!</h2>
+        </div>
+        <a href="index.html"><button>GO HOME</button></a>
+    </div>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <div id="navLinks">
+                    <svg width="28" height="28" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="hideMenu">
+                        <path
+                            d="M128 24C107.431 24 87.3235 30.0995 70.2207 41.5272C53.118 52.9548 39.7881 69.1974 31.9166 88.2009C24.0451 107.204 21.9855 128.115 25.9984 148.289C30.0112 168.463 39.9163 186.994 54.4609 201.539C69.0056 216.084 87.5366 225.989 107.711 230.002C127.885 234.015 148.796 231.955 167.799 224.083C186.803 216.212 203.045 202.882 214.473 185.779C225.901 168.677 232 148.569 232 128C231.974 100.426 221.008 73.9882 201.51 54.4901C182.012 34.9921 155.574 24.0265 128 24V24ZM128 216C110.595 216 93.5814 210.839 79.1099 201.169C64.6383 191.5 53.3592 177.756 46.6986 161.676C40.0381 145.596 38.2954 127.902 41.6909 110.832C45.0864 93.7617 53.4676 78.0816 65.7747 65.7746C78.0817 53.4676 93.7618 45.0864 110.832 41.6909C127.902 38.2954 145.596 40.0381 161.676 46.6986C177.756 53.3591 191.5 64.6383 201.169 79.1098C210.839 93.5813 216 110.595 216 128C215.974 151.331 206.694 173.699 190.196 190.196C173.699 206.694 151.331 215.974 128 216V216ZM165.7 154.3C167.202 155.817 168.045 157.865 168.045 160C168.045 162.135 167.202 164.183 165.7 165.7C164.171 167.179 162.127 168.005 160 168.005C157.873 168.005 155.829 167.179 154.3 165.7L128 139.3L101.7 165.7C100.171 167.179 98.1271 168.005 96 168.005C93.873 168.005 91.8292 167.179 90.3 165.7C88.7978 164.183 87.955 162.135 87.955 160C87.955 157.865 88.7978 155.817 90.3 154.3L116.7 128L90.3 101.7C89.0243 100.146 88.3724 98.1723 88.471 96.1639C88.5697 94.1555 89.4119 92.2556 90.8337 90.8337C92.2556 89.4118 94.1555 88.5696 96.164 88.471C98.1724 88.3724 100.146 89.0243 101.7 90.3L128 116.7L154.3 90.3C155.854 89.0243 157.828 88.3724 159.836 88.471C161.845 88.5696 163.744 89.4118 165.166 90.8337C166.588 92.2556 167.43 94.1555 167.529 96.1639C167.628 98.1723 166.976 100.146 165.7 101.7L139.3 128L165.7 154.3Z"
+                            fill="#F5F5F5" />
+                    </svg>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="active-li">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    id="showMenu">
+                    <path d="M2.75 12.25H13.25M2.75 8.25H13.25M2.75 4.25H13.25" stroke="#F5F5F5" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contact" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <span>Working hours Monday - Friday 10:00- 18:00</span>
+                    <div>
+                        <label for="name">Name</label>
+                        <input placeholder="Name" id="name" name="name" type="text">
+                    </div>
+                    <div>
+                        <label for="surname">Surname</label>
+                        <input placeholder="Surname" id="surname" name="surname" type="text">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input placeholder="E-Mail" id="email" name="email" type="email">
+                    </div>
+                    <div>
+                        <label for="number">Number</label>
+                        <input placeholder="Number" id="number" name="number" type="number">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea placeholder="Write message..." id="message" name="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="formButton"><button type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-description">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam laboriosam necessitatibus
+                        reiciendis nulla, natus amet non accusantium nesciunt placeat quo adipisci repellendus totam
+                        voluptates, pariatur dolores perspiciatis architecto. Omnis, expedita!</p>
+                </div>
+                <div class="footerLinks">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <button>Follow us on
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.67 4H5.33C4.97807 4.00262 4.6413 4.14358 4.39244 4.39244C4.14358 4.6413 4.00262 4.97807 4 5.33V26.67C4.00262 27.0219 4.14358 27.3587 4.39244 27.6076C4.6413 27.8564 4.97807 27.9974 5.33 28H16.82V18.72H13.7V15.09H16.82V12.42C16.82 9.32 18.71 7.63 21.49 7.63C22.42 7.63 23.35 7.63 24.28 7.77V11H22.37C20.86 11 20.57 11.72 20.57 12.77V15.08H24.17L23.7 18.71H20.57V28H26.67C27.0219 27.9974 27.3587 27.8564 27.6076 27.6076C27.8564 27.3587 27.9974 27.0219 28 26.67V5.33C27.9974 4.97807 27.8564 4.6413 27.6076 4.39244C27.3587 4.14358 27.0219 4.00262 26.67 4Z"
+                                    fill="#F5F5F5" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span>© Copyright 2022 & All rights reserved</span>
+    </footer>
+
+    <script src="index.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('J6Az7Q4xsZByg5yjh');
+        })();
+    </script>
+</body>
+
+</html>
