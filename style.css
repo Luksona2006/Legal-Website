@@ -965,6 +965,7 @@ form button:hover {
 
     .footerButtons {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .footer-content {
