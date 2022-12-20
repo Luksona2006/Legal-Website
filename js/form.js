@@ -32,9 +32,7 @@ function handleClick(e) {
             from_name: name,
             email_id: document.getElementById('email').value,
             number: document.getElementById('number').value,
-            message: document.getElementById('message').value,
-            date: document.getElementById('date').value,
-            time: document.getElementById('time').value
+            message: document.getElementById('message').value
         }
         
         emailjs.send('service_b5v50pu', 'template_4g0x9jg', params)
