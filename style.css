@@ -58,6 +58,7 @@ h1, h2, h3, h4 ,h5 ,h6 , p, span, button, a, label, input, textarea {
 
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -83,6 +84,7 @@ body {
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
     background-color: rgb(80, 80, 80);
+    overflow-x: hidden;
 }
 
 @keyframes fadeInAnimation {
@@ -166,11 +168,13 @@ header .container {
     max-width: none;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
     padding: 0;
     background-color: rgba(156, 62, 55, 0.9);
     z-index: 10;
+
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -179,12 +183,10 @@ main {
 
 nav {
     max-width: 1600px;
-    margin: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 20px 64px;
 }
 
@@ -824,6 +826,10 @@ form button:hover {
         padding: 0 32px;
     }
 
+    nav {
+        padding: 20px 32px;
+    }
+
     .textbox h1 {
         gap: 4px;
     }
@@ -852,6 +858,10 @@ form button:hover {
     #popUp div {
         flex-direction: column;
     }
+
+    nav a img {
+        width: 56px;
+    }
 }
 
 
@@ -867,5 +877,10 @@ form button:hover {
     }
     .card {
         padding: 20px;
+    }
+
+    footer ul {
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
