@@ -789,7 +789,7 @@ form button:hover {
         align-items: center;
         text-align: center;
     }
-    
+
     .home-header {
         height: 120vh;
     }
@@ -853,8 +853,8 @@ form button:hover {
     }
     
     .active-li {
-        font-size: 22px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 700;
         color: #F5F5F5;
         letter-spacing: 2px;
     }
@@ -905,9 +905,6 @@ form button:hover {
 @media (max-width: 420px) {
     form {
         padding: 24px;
-    }
-    #navLinks ul {
-        align-items: flex-start;
     }
     .about-imgs {
         grid-template-columns: 1fr;

@@ -5,155 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Law</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Expat Legal Consulting</title>
+    <link rel="stylesheet" href="/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="application/json" href="https://api.emailjs.com/api/v1.0/email/send">
     <link rel="icon" type="image/x-icon" href="/images/logo.ico">
 </head>
 
 <body>
+    <div id="popUp">
+        <div><img src="/images/succsessful.png" alt="succsessful">
+            <h2>Message Sent Succsessfuly!</h2>
+        </div>
+        <a href="index.html"><button>GO HOME</button></a>
+    </div>
     <header>
-        <div class="home-header">
-            <div class="container">
-                <nav>
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
-                    <div id="navLinks">
-                        <svg width="28" height="28" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            id="hideMenu">
-                            <path
-                                d="M128 24C107.431 24 87.3235 30.0995 70.2207 41.5272C53.118 52.9548 39.7881 69.1974 31.9166 88.2009C24.0451 107.204 21.9855 128.115 25.9984 148.289C30.0112 168.463 39.9163 186.994 54.4609 201.539C69.0056 216.084 87.5366 225.989 107.711 230.002C127.885 234.015 148.796 231.955 167.799 224.083C186.803 216.212 203.045 202.882 214.473 185.779C225.901 168.677 232 148.569 232 128C231.974 100.426 221.008 73.9882 201.51 54.4901C182.012 34.9921 155.574 24.0265 128 24V24ZM128 216C110.595 216 93.5814 210.839 79.1099 201.169C64.6383 191.5 53.3592 177.756 46.6986 161.676C40.0381 145.596 38.2954 127.902 41.6909 110.832C45.0864 93.7617 53.4676 78.0816 65.7747 65.7746C78.0817 53.4676 93.7618 45.0864 110.832 41.6909C127.902 38.2954 145.596 40.0381 161.676 46.6986C177.756 53.3591 191.5 64.6383 201.169 79.1098C210.839 93.5813 216 110.595 216 128C215.974 151.331 206.694 173.699 190.196 190.196C173.699 206.694 151.331 215.974 128 216V216ZM165.7 154.3C167.202 155.817 168.045 157.865 168.045 160C168.045 162.135 167.202 164.183 165.7 165.7C164.171 167.179 162.127 168.005 160 168.005C157.873 168.005 155.829 167.179 154.3 165.7L128 139.3L101.7 165.7C100.171 167.179 98.1271 168.005 96 168.005C93.873 168.005 91.8292 167.179 90.3 165.7C88.7978 164.183 87.955 162.135 87.955 160C87.955 157.865 88.7978 155.817 90.3 154.3L116.7 128L90.3 101.7C89.0243 100.146 88.3724 98.1723 88.471 96.1639C88.5697 94.1555 89.4119 92.2556 90.8337 90.8337C92.2556 89.4118 94.1555 88.5696 96.164 88.471C98.1724 88.3724 100.146 89.0243 101.7 90.3L128 116.7L154.3 90.3C155.854 89.0243 157.828 88.3724 159.836 88.471C161.845 88.5696 163.744 89.4118 165.166 90.8337C166.588 92.2556 167.43 94.1555 167.529 96.1639C167.628 98.1723 166.976 100.146 165.7 101.7L139.3 128L165.7 154.3Z"
-                                fill="#F5F5F5" />
-                        </svg>
-                        <ul>
-                            <li>
-                                <a href="index.html" class="active-li">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="services.html">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="about.html">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html">
-                                    Contact Us
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        id="showMenu">
-                        <path d="M2.75 12.25H13.25M2.75 8.25H13.25M2.75 4.25H13.25" stroke="#F5F5F5" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round" />
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="/images/logo.png" alt="Expat Legal Consulting">
+                </a>
+                <div id="navLinks">
+                    <svg width="28" height="28" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="hideMenu">
+                        <path
+                            d="M128 24C107.431 24 87.3235 30.0995 70.2207 41.5272C53.118 52.9548 39.7881 69.1974 31.9166 88.2009C24.0451 107.204 21.9855 128.115 25.9984 148.289C30.0112 168.463 39.9163 186.994 54.4609 201.539C69.0056 216.084 87.5366 225.989 107.711 230.002C127.885 234.015 148.796 231.955 167.799 224.083C186.803 216.212 203.045 202.882 214.473 185.779C225.901 168.677 232 148.569 232 128C231.974 100.426 221.008 73.9882 201.51 54.4901C182.012 34.9921 155.574 24.0265 128 24V24ZM128 216C110.595 216 93.5814 210.839 79.1099 201.169C64.6383 191.5 53.3592 177.756 46.6986 161.676C40.0381 145.596 38.2954 127.902 41.6909 110.832C45.0864 93.7617 53.4676 78.0816 65.7747 65.7746C78.0817 53.4676 93.7618 45.0864 110.832 41.6909C127.902 38.2954 145.596 40.0381 161.676 46.6986C177.756 53.3591 191.5 64.6383 201.169 79.1098C210.839 93.5813 216 110.595 216 128C215.974 151.331 206.694 173.699 190.196 190.196C173.699 206.694 151.331 215.974 128 216V216ZM165.7 154.3C167.202 155.817 168.045 157.865 168.045 160C168.045 162.135 167.202 164.183 165.7 165.7C164.171 167.179 162.127 168.005 160 168.005C157.873 168.005 155.829 167.179 154.3 165.7L128 139.3L101.7 165.7C100.171 167.179 98.1271 168.005 96 168.005C93.873 168.005 91.8292 167.179 90.3 165.7C88.7978 164.183 87.955 162.135 87.955 160C87.955 157.865 88.7978 155.817 90.3 154.3L116.7 128L90.3 101.7C89.0243 100.146 88.3724 98.1723 88.471 96.1639C88.5697 94.1555 89.4119 92.2556 90.8337 90.8337C92.2556 89.4118 94.1555 88.5696 96.164 88.471C98.1724 88.3724 100.146 89.0243 101.7 90.3L128 116.7L154.3 90.3C155.854 89.0243 157.828 88.3724 159.836 88.471C161.845 88.5696 163.744 89.4118 165.166 90.8337C166.588 92.2556 167.43 94.1555 167.529 96.1639C167.628 98.1723 166.976 100.146 165.7 101.7L139.3 128L165.7 154.3Z"
+                            fill="#F5F5F5" />
                     </svg>
-                </nav>
-            </div>
-            <div class="textbox">
-                <h1 data-aos="fade-down">Legal <span data-aos="fade-left"></span> Real Estate <span data-aos="fade-right"></span> Relocation</h1>
-                <h2>Our services are for Businesses as well as for individuals</h2>
-                <a href="services.html"><button>VIEW SERVICES</button></a>
-            </div>
+                    <ul>
+                        <li>
+                            <a href="/pages/index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/about.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/contact.html" class="active-li">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    id="showMenu">
+                    <path d="M2.75 12.25H13.25M2.75 8.25H13.25M2.75 4.25H13.25" stroke="#F5F5F5" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </nav>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="info-section">
-                <div data-aos="fade-right"><img src="images/image-1.png" alt="tuxedo"></div>
-                <div class="info-box" data-aos="fade-left">
-                    <h2 data-aos="fade-up">Why <span>ELC</span> ?</h2>
-                    <p>Friendly Environment, Professionals, Fluent bilingual English-speaking stuff, quality service and
-                        Fair pricing which will be determined in every particular situation separately, depending on
-                        specificity of the case.</p>
-                </div>
-            </div>
-            <div class="info-section">
-                <div class="info-box" data-aos="fade-right">
-                    <h2 data-aos="fade-up"><span>Quality</span> & Proffesionalism</h2>
-                    <p>Our main goal is to focus on the client's interests and desires, that's what makes us
-                        professionals and that's the main reason why we have so many satisfied clients. Besides we
-                        provide an absolutely free consultation in any legal matters. Where you aren't limited in time.
-                        So, you can discuss the case with a certified lawyer, get some valuable legal advice and only
-                        after that decide whether you want to use our paid service or not.</p>
-                </div>
-                <div data-aos="fade-left"><img src="images/image-2.png" alt="tuxedo"></div>
-            </div>
-            <div class="review" data-aos="fade-up">
-                <div class="card">
-                    <div class="card__profile__name">
-                        <div><img src="images/card/profile-1.png" alt="profile"></div>
-                        <div class="card__name__rating">
-                            <h4>Amelia Smith</h4>
-                            <div class="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-half.png" alt="rating">
-                            </div>
-                        </div>
+            <div class="contact" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <span>Working hours Monday - Friday 10:00- 18:00</span>
+                    <div>
+                        <label for="name">Name</label>
+                        <input placeholder="Name" id="name" name="name" type="text">
                     </div>
-                    <p>I saw professionalism and ideal environment there, thanks you!</p>
-                </div>
-                <div class="card">
-                    <div class="card__profile__name">
-                        <div><img src="images/card/profile-2.png" alt="profile"></div>
-                        <div class="card__name__rating">
-                            <h4>Noah Jones</h4>
-                            <div class="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                            </div>
-                        </div>
+                    <div>
+                        <label for="surname">Surname</label>
+                        <input placeholder="Surname" id="surname" name="surname" type="text">
                     </div>
-                    <p>They helped me to find quick and effective solution of my legal issue. Best legal service for
-                        expats in Tbilsi</p>
-                </div>
-                <div class="card">
-                    <div class="card__profile__name">
-                        <div><img src="images/card/profile-3.png" alt="profile"></div>
-                        <div class="card__name__rating">
-                            <h4>Lucas William</h4>
-                            <div class="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                            </div>
-                        </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input placeholder="E-Mail" id="email" name="email" type="email">
                     </div>
-                    <p>Giorgi assisted me to get work residence permit. His intervention was really helpfull!</p>
-                </div>
-                <div class="card">
-                    <div class="card__profile__name">
-                        <div><img src="images/card/profile-4.png" alt="profile"></div>
-                        <div class="card__name__rating">
-                            <h4>Isabella Garcia</h4>
-                            <div class="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-full.png" alt="rating">
-                                <img src="images/card/star-half.png" alt="rating">
-                            </div>
-                        </div>
+                    <div>
+                        <label for="number">Number</label>
+                        <input placeholder="Number" id="number" name="number" type="number">
                     </div>
-                    <p>I am very satisfied with the quality of service and the result. Thank you very much and good luck
-                        to you!
-                    </p>
-                </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea placeholder="Write message..." id="message" name="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="formButton"><button type="submit">Submit</button></div>
+                </form>
             </div>
         </div>
     </main>
@@ -161,8 +98,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-description">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="logo">
+                    <a href="/pages/index.html">
+                        <img src="/images/logo.png" alt="Expat Legal Consulting">
                     </a>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam laboriosam necessitatibus
                         reiciendis nulla, natus amet non accusantium nesciunt placeat quo adipisci repellendus totam
@@ -172,16 +109,16 @@
                     <h3>Menu</h3>
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="/pages/index.html">Home</a>
                         </li>
                         <li>
-                            <a href="services.html">Services</a>
+                            <a href="/pages/services.html">Services</a>
                         </li>
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="/pages/about.html">About Us</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="/pages/contact.html">Contact Us</a>
                         </li>
                     </ul>
                     <div class="footerButtons">
@@ -253,44 +190,19 @@
         <span>© Copyright 2022 & All rights reserved</span>
     </footer>
 
-    <script src="index.js"></script>
-
+    <script src="/js/index.js"></script>
+    <script src="/js/form.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.review').slick({
-                Infinity: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                responsive: [
-                    {
-                        breakpoint: 1220,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            infinite: true
-                        }
-                    },
-                    {
-                        breakpoint: 840,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true
-                        }
-                    }
-                ]
-            });
-        });
+        (function () {
+            emailjs.init('J6Az7Q4xsZByg5yjh');
+        })();
     </script>
 </body>
 
