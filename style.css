@@ -433,55 +433,34 @@ footer {
     gap: 12px;
 }
 
-.fb-button button {
+.footerButtons button {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     padding: 8px 56px;
-    background-color: #3B5998;
-    border: 2px solid #3B5998;
     border-radius: 12px;
 
     font-size: 16px;
     color: #F5F5F5;
     transition: 0.5s all ease-out;
     width: 100%;
+}
+
+.fb-button button {
+    background-color: #3B5998;
+    border: 2px solid #3B5998;
 }
 
 .whatsApp-button button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px 56px;
     background-color: #1FAF38;
     border: 2px solid #1FAF38;
-    border-radius: 12px;
-
-    font-size: 16px;
-    color: #F5F5F5;
-    transition: 0.5s all ease-out;
-    width: 100%;
 }
 
 .viber-button button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px 56px;
     background-color: #8F5DB7;
     border: 2px solid #8F5DB7;
-    border-radius: 12px;
-
-    font-size: 16px;
-    color: #F5F5F5;
-    transition: 0.5s all ease-out;
-    width: 100%;
 }
 
 
@@ -888,7 +867,7 @@ form button:hover {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .services, .about, .contact {
         gap: 40px;
     }
