@@ -426,7 +426,14 @@ footer {
     align-items: center;
 }
 
-.footerLinks button {
+.footerButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fb-button button {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -443,22 +450,48 @@ footer {
     width: 100%;
 }
 
+.whatsApp-button button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 56px;
+    background-color: #1FAF38;
+    border: 2px solid #1FAF38;
+    border-radius: 12px;
+
+    font-size: 16px;
+    color: #F5F5F5;
+    transition: 0.5s all ease-out;
+    width: 100%;
+}
+
+.viber-button button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 56px;
+    background-color: #8F5DB7;
+    border: 2px solid #8F5DB7;
+    border-radius: 12px;
+
+    font-size: 16px;
+    color: #F5F5F5;
+    transition: 0.5s all ease-out;
+    width: 100%;
+}
+
+
 
 .footerLinks a {
     width: 100%;
 }
 
-footer button:hover {
-    background-color: transparent;
-    color: #3B5998;
-}
-
-footer button svg path {
-    transition: 0.5s all ease-out;
-}
-
-footer button:hover svg path{
-    fill: #3B5998;
+.fb-button button:hover,.whatsApp-button button:hover, .viber-button button:hover {
+    transform: scale(1.05);
 }
 
 .footer-description {
