@@ -685,6 +685,12 @@ form button:hover {
     gap: 40px;
 }
 
+.service-divs2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 .service-div {
     width: 100%;
     display: flex;
@@ -693,6 +699,15 @@ form button:hover {
     background-color: #F5F5F5;
     padding: 20px 20px 40px 20px;
     border-radius: 16px;
+}
+
+.service-none {
+    display: none;
+}
+
+.service-divs2 .service-div {
+    max-width: 464px;
+    width: 100%;
 }
 
 .service-div div {
@@ -736,6 +751,14 @@ form button:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+
+    .service-none {
+        display: flex;
+    }
+
+    .service-divs2 {
+        display: none;
     }
 
     .textbox h1 {
