@@ -71,7 +71,7 @@ function checkValue(e) {
     } else {
         if(currentInput.value !== '') {
             currentInput.style.border = '2px solid rgb(80, 80, 80)';
-            currentInput.parentElement.querySelector('label').style.color = 'rgb(43, 43, 43);'
+            currentInput.parentElement.querySelector('label').style.color = '#2B2B2B'
         }
     }
 }
