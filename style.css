@@ -987,6 +987,18 @@ form button:hover {
     nav a img {
         width: 56px;
     }
+
+    .contact-cards a div {
+        padding: 12px;
+    }
+
+    .contact-cards a div:hover {
+        transform: translateY(-20px);
+    }
+
+    .contact-cards a div {
+        padding: 20px;
+    }
 }
 
 
